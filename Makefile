@@ -1,9 +1,10 @@
-cc=g++
-ccFlags=-std=c++11
-files=main.cpp
+CXX=g++
+CXXFlags=-std=c++11 -o
+Files=main.cpp
+Objects=neuron.o
 
-default: $(files)
-	$(cc) $(ccFlags) $(files)
+default: 
+	$(CXX) $(CXXFlags) $(Objects) $(Files)
 
 clean:
-	rm -f *.o a.out
+	rm -f $(Objects) *.out
