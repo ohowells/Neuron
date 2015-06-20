@@ -1,9 +1,9 @@
-CXX=g++
+CXX=clang++
 CXXFlags=-std=c++11 -o
 Files=main.cpp
 Objects=neuron.o
 
-default: 
+default:
 	$(CXX) $(CXXFlags) $(Objects) $(Files)
 
 clean:
